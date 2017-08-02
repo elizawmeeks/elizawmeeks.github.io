@@ -1,0 +1,14 @@
+$blue: #55BFF3;
+$pink: #EA3864;
+$grey: #f4f4f4;
+$navy: #08182b;
+
+@import "header";
+@import "about";
+@import "projects";
+@import "tech";
+@import "contact";
+
+nav{
+    background-color: $navy;
+}
