@@ -8,7 +8,15 @@ $navy: #08182b;
 @import "projects";
 @import "tech";
 @import "contact";
-
+body{
+    background-color: $grey;
+    color: $navy;
+}
 nav{
     background-color: $navy;
+    color: $grey;
+}
+
+.row{
+    margin-bottom: 0;
 }
