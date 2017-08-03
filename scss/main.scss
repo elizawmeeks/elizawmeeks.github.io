@@ -2,6 +2,8 @@ $blue: #55BFF3;
 $pink: #EA3864;
 $grey: #f4f4f4;
 $navy: #08182b;
+$translucentNavy: rgba(8,24,43,.3);
+$transluscentBlue: rgba(85,191,243,.7);
 
 @import "header";
 @import "about";
@@ -19,4 +21,23 @@ nav{
 
 .row{
     margin-bottom: 0;
+}
+.rowBottom{
+    margin-bottom: 20px;
+}
+
+.greyFont{
+    color: $grey;
+}
+.blueFont{
+    color: $blue;
+}
+.pinkFont{
+    color: $pink;
+}
+.navyFont{
+    color: $navy;
+}
+.bigger{
+    font-size: 2em;
 }

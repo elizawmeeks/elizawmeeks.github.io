@@ -1,3 +1,96 @@
+$box-shadow: inset 0 0 15px $blue;
+
 #projects {
     background: $blue;
+    height: 100vh;
+}
+
+@keyframes spin {
+	from { transform: rotateY(360deg); }
+	to { transform: rotateY(0); }
+}
+
+.wrap {
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+}
+
+.cube {
+	position: relative;
+	width: 200px;
+    transform-style: preserve-3d;
+    animation: spin 20s infinite linear;
+    margin-left: 25%;
+    margin-top: 25vh;
+}
+
+.cube div {
+    box-shadow: $box-shadow;
+    border: solid 2px $navy;
+    background-color: rgba(244,244,244,.6);
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+}
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+}
+.front {
+	transform: translateZ(100px);
+}
+
+@mixin face {
+    border: solid 2px $navy;
+    box-shadow: $box-shadow;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+
+div .outer-circle {
+	@include face;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+div .outer-square {
+	@include face;
+	width: 141px;
+	height: 141px;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+div .inner-square {
+	@include face;
+	width: 90px;
+	height: 90px;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+div .inner-circle {
+	@include face;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	transform: translate(-50%,-50%) rotate(45deg);
 }

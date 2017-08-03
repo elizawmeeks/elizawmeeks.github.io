@@ -1,11 +1,29 @@
 #header{
     background: $blue url("../img/PortfolioHeader.jpg") no-repeat;
     background-size: cover;
-	height: 100vh;
+    height: 100vh;
+    z-index: 1;
 }
 
-// background-color
-// background-image
-// background-repeat
-// background-attachment
-// background-position
+.thirtyPercent{
+    height: 30vh;
+}
+
+.lightBox{
+    background-color: rgba(244,244,244,.6);
+    height: 35vh;
+    z-index: 2;
+}
+
+.fiveVH{
+    height: 5vh;
+}
+
+.navyBorder{
+    border: 10px $navy solid;
+    height: 25vh;
+}
+
+.headerIcon{
+    height: 50px;
+}
