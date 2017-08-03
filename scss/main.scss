@@ -7,6 +7,7 @@ $transluscentBlue: rgba(85,191,243,.7);
 $transluscentPink: rgba(234,56,100,.3);
 
 @import url('https://fonts.googleapis.com/css?family=Archivo|Pacifico|Vidaloka');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 @import "header";
 @import "about";
@@ -25,8 +26,11 @@ nav{
 .brand-logo{
     font-family: 'Pacifico', cursive;
 }
-h2, h3{
+h2, h3, .fancyFont{
     font-family: 'Vidaloka', serif;
+}
+.subtitle{
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .row{
     margin-bottom: 0;

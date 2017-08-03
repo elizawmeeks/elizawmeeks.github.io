@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo|Pacifico|Vidaloka");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
 #header {
   background: #55BFF3 url("../img/Portfoliocropped.jpeg") no-repeat;
   background-size: cover;
@@ -146,8 +147,11 @@ nav {
 .brand-logo {
   font-family: 'Pacifico', cursive; }
 
-h2, h3 {
+h2, h3, .fancyFont {
   font-family: 'Vidaloka', serif; }
+
+.subtitle {
+  font-family: 'Open Sans Condensed', sans-serif; }
 
 .row {
   margin-bottom: 0; }
