@@ -28,7 +28,7 @@
 
 #aboutpic {
   background: #f4f4f4 url("../img/PortfolioAboutMe.jpg") no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100vh; }
 
 #projects {
