@@ -2,8 +2,11 @@ $blue: #55BFF3;
 $pink: #EA3864;
 $grey: #f4f4f4;
 $navy: #08182b;
-$translucentNavy: rgba(8,24,43,.3);
+$transluscentNavy: rgba(8,24,43,.8);
 $transluscentBlue: rgba(85,191,243,.7);
+$transluscentPink: rgba(234,56,100,.3);
+
+@import url('https://fonts.googleapis.com/css?family=Archivo|Pacifico|Vidaloka');
 
 @import "header";
 @import "about";
@@ -13,12 +16,18 @@ $transluscentBlue: rgba(85,191,243,.7);
 body{
     background-color: $grey;
     color: $navy;
+    font-family: 'Archivo', sans-serif;
 }
 nav{
     background-color: $navy;
     color: $grey;
 }
-
+.brand-logo{
+    font-family: 'Pacifico', cursive;
+}
+h2, h3{
+    font-family: 'Vidaloka', serif;
+}
 .row{
     margin-bottom: 0;
 }

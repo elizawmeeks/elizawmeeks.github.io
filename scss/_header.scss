@@ -1,17 +1,21 @@
 #header{
-    background: $blue url("../img/PortfolioHeader.jpg") no-repeat;
+    background: $blue url("../img/Portfoliocropped.jpeg") no-repeat;
     background-size: cover;
     height: 100vh;
     z-index: 1;
 }
 
-.thirtyPercent{
-    height: 30vh;
+.brand-logo{
+    color: $pink;
+}
+
+.twentyFivePercent{
+    height: 25vh;
 }
 
 .lightBox{
     background-color: rgba(244,244,244,.6);
-    height: 35vh;
+    height: 40vh;
     z-index: 2;
 }
 
@@ -21,9 +25,9 @@
 
 .navyBorder{
     border: 10px $navy solid;
-    height: 25vh;
+    height: 30vh;
 }
 
 .headerIcon{
-    height: 50px;
+    height: 25px;
 }
