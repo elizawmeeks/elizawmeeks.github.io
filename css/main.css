@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo|Pacifico|Vidaloka");
+#header {
+  background: #55BFF3 url("../img/Portfoliocropped.jpeg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 1; }
+
+.brand-logo {
+  color: #EA3864; }
+
+.twentyFivePercent {
+  height: 25vh; }
+
+.lightBox {
+  background-color: rgba(244, 244, 244, 0.6);
+  height: 40vh;
+  z-index: 2; }
+
+.fiveVH {
+  height: 5vh; }
+
+.navyBorder {
+  border: 10px #08182b solid;
+  height: 30vh; }
+
+.headerIcon {
+  height: 25px; }
+
+#aboutpic {
+  background: #f4f4f4 url("../img/PortfolioAboutMe.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+#projects {
+  background: #55BFF3;
+  height: 100vh; }
+
+@keyframes spin {
+  from {
+    transform: rotateY(360deg); }
+  to {
+    transform: rotateY(0); } }
+
+.wrap {
+  perspective: 800px;
+  perspective-origin: 50% 100px; }
+
+.cube {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: spin 20s infinite linear;
+  margin-left: 25%;
+  margin-top: 25vh; }
+
+.cube div {
+  box-shadow: inset 0 0 15px rgba(8, 24, 43, 0.8);
+  border: solid 6px #E5A11F;
+  background-color: rgba(234, 56, 100, 0.3);
+  position: absolute;
+  width: 200px;
+  height: 200px; }
+
+.cubeBack {
+  transform: translateZ(-100px) rotateY(180deg); }
+
+.cubeRight {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right; }
+
+.cubeLeft {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left; }
+
+.cubeTop {
+  transform: rotateX(-90deg) translateY(-100px);
+  transform-origin: top center; }
+
+.cubeBottom {
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom center; }
+
+.cubeFront {
+  transform: translateZ(100px); }
+
+div .outer-circle {
+  border: solid 4px #E5A11F;
+  box-shadow: inset 0 0 15px rgba(8, 24, 43, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%) rotate(45deg); }
+
+div .outer-square {
+  border: solid 4px #E5A11F;
+  box-shadow: inset 0 0 15px rgba(8, 24, 43, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 141px;
+  height: 141px;
+  transform: translate(-50%, -50%) rotate(45deg); }
+
+div .inner-square {
+  border: solid 4px #E5A11F;
+  box-shadow: inset 0 0 15px rgba(8, 24, 43, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  transform: translate(-50%, -50%) rotate(45deg); }
+
+div .inner-circle {
+  border: solid 4px #E5A11F;
+  box-shadow: inset 0 0 15px rgba(8, 24, 43, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  transform: translate(-50%, -50%) rotate(45deg); }
+
+#tech {
+  background: #f4f4f4; }
+
+.icon {
+  height: 50px; }
+
+#contact {
+  background: #55BFF3; }
+
+body {
+  background-color: #f4f4f4;
+  color: #08182b;
+  font-family: 'Archivo', sans-serif; }
+
+nav {
+  background-color: #08182b;
+  color: #f4f4f4; }
+
+.brand-logo {
+  font-family: 'Pacifico', cursive; }
+
+h2, h3 {
+  font-family: 'Vidaloka', serif; }
+
+.row {
+  margin-bottom: 0; }
+
+.rowBottom {
+  margin-bottom: 20px; }
+
+.greyFont {
+  color: #f4f4f4; }
+
+.blueFont {
+  color: #55BFF3; }
+
+.pinkFont {
+  color: #EA3864; }
+
+.navyFont {
+  color: #08182b; }
+
+.bigger {
+  font-size: 2em; }
